@@ -9,4 +9,8 @@ const SurahRoute = require("./surah");
 router.use("/api/ayah", AyahRoute);
 router.use("/api/surah", SurahRoute);
 
+
+router.get("/", (req, res) => {
+  res.end("<h1>Hello From Main</h1>");
+});
 module.exports = router;
